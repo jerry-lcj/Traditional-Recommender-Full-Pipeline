@@ -55,21 +55,10 @@ Ideal For:
 rec-sys-full-pipeline/
 │
 ├── README.md
-├── requirements.txt
 │
 ├── notebooks/
-│   └── movielens_full_pipeline_colab.ipynb   # 主教学 Notebook
-│
-├── src/   # 可选：未来可将 notebook 代码模块化
-│   ├── models/
-│   ├── train_scripts/
-│   ├── utils/
-│   └── ...
-│
-└── data/  # 自动下载，不上传 GitHub
-```
+    └── recommendation_system_practice.ipynb   # 主教学 Notebook
 
----
 
 # 安装依赖 / Installation
 
