@@ -1,9 +1,9 @@
-# 📘 推荐系统全流程教学项目：从召回到重排  
-# 📘 Full Pipeline Recommender System Tutorial: Recall → Pre-Rank → Rank → Re-Rank
+# 推荐系统全流程：从召回到重排  
+# Full Pipeline Recommender System Tutorial: Recall → Pre-Rank → Rank → Re-Rank
 
 ---
 
-## 🇨🇳 项目简介（中文）
+## 项目简介（中文）
 
 本项目是一个基于 MovieLens-1M 的推荐系统完整教学示例，涵盖了工业界推荐系统的四个核心阶段：
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 🇺🇸 Project Overview (English)
+## Project Overview (English)
 
 This repository provides a complete, fully executable MovieLens-1M recommender system tutorial, covering all major stages used in real-world recommender systems:
 
@@ -71,7 +71,7 @@ rec-sys-full-pipeline/
 
 ---
 
-# 📦 安装依赖 / Installation
+# 安装依赖 / Installation
 
 ```
 pip install -r requirements.txt
@@ -90,7 +90,7 @@ joblib
 
 ---
 
-# 🎬 数据集 / Dataset
+# 数据集 / Dataset
 
 使用 **MovieLens-1M** 数据集。
 
@@ -110,7 +110,7 @@ rating < 4 → label = 0（负样本）
 
 ---
 
-# 🔶 阶段一：召回 Recall（DSSM 双塔模型）
+# 阶段一：召回 Recall（DSSM 双塔模型）
 
 召回模型结构：
 
@@ -132,7 +132,7 @@ rating < 4 → label = 0（负样本）
 
 ---
 
-# 🔷 阶段二：粗排 Pre-Rank（小型 MLP）
+# 阶段二：粗排 Pre-Rank（小型 MLP）
 
 输入：
 
@@ -149,7 +149,7 @@ rating < 4 → label = 0（负样本）
 
 ---
 
-# 🟦 阶段三：精排 Rank（深度 MLP）
+# 阶段三：精排 Rank（深度 MLP）
 
 输入：
 
@@ -169,7 +169,7 @@ rating < 4 → label = 0（负样本）
 
 ---
 
-# 🟩 阶段四：重排 Re-Rank（MMR 多样性）
+# 阶段四：重排 Re-Rank（MMR 多样性）
 
 为了避免推荐结果“洗脸式相似”，使用 MMR 进行多样性重排：
 
@@ -183,7 +183,7 @@ MMR = λ * relevance  -  (1 − λ) * similarity
 
 ---
 
-# 🚀 端到端 Demo / End-to-End Demo
+# 端到端 Demo / End-to-End Demo
 
 Notebook 提供完整推理：
 
@@ -207,7 +207,7 @@ recommend_for_user(
 
 ---
 
-# 🧩 可扩展方向 / Possible Extensions
+# 可扩展方向 / Possible Extensions
 
 你可以继续扩展本项目，例如：
 
